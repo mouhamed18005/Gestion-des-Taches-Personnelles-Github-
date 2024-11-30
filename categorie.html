@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="fr"
+<head>
+    <meta charset="UTF-8">
+    <meta naame="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Categorie - Gestion des taches personnelles </title>
+    <link  rel="stylesheet" type="text/css" href="style.css">
+</head>
+<body>
+    <header class="navbar">
+        <nav class="navbar-nav">
+            <ul class="navbar-menu">
+                <li class="home">
+                    <a href="index.html" title="Afficher la page d'accueil">
+                        <i class="glyphicon-logo-ca">
+                            <img src="style/image/presentation/logo-ca.png" alt="accueil">
+                        </i>
+                        Accueil
+                    </a>
+                </li>
+                <li>
+                    <a href="categorie.html" title="Afficher la page de presentation">
+                        <i class="glyphicon-categorie">
+                            <img src="style/image/presentation/categorie.png" alt="categorie">
+                        </i>
+                        Categorie
+                    </a>
+                </li>
+                <li>
+                    <a href="connexion.html" title="Afficher la page de connexion"> 
+                        <i class="glyphicon-connexion">
+                            <img src="style/image/presentation/connexion.jpg" alt="connexion">
+                        </i>
+                        Connexion
+                    </a>
+                </li>
+    </header>
+    
+    <main>
+        <section class="task-list">
+            <h2>Mes taches</h2>
+            <button onclick="window.location.href='create-task.html'">Ajouter une Tache</button>
+            <ul class="defilant">
+                <li class="task-item">
+                    <h3>LUNDI</h3>
+                    <p>06h - 08h: Reveil, Meditation et Planification de l'Emploi du Temps de la Semaine</p>
+                    <p>08h00 - 11h00: Travail / Etude</p>
+                    <p>11h00 - 12h00: Pause et etirement</p>
+                    <p>12h00 - 15h00: Travail avec focus sur les taches prioritaires</p>
+                    <p>15h00 - 16h00: Dejeuner et relaxation</p>
+                    <p>16h00 - 18h00: Session de brainstorming / reflexion</p>
+                    <p>18h00 - 19h00: Exercice physique (marche rapide)</p>
+                    <p>19h00 - 20h00: Diner</p>
+                    <p>20h00 - 21h00: Lecture d'article inspirants</p>
+                    <p>21h00 - 22h30: Temps libre (film ou musique)</p>
+                </li>
+
+                <li class="task-item">
+                    <h3>MARDI</h3>
+                    <p>06h00 - 08h00: Reveil, yoga matinal, petit-dejeuner</p>
+                    <p>08h00 - 11h00: Travail / Renion d'equipe</p>
+                    <p>11h00 - 12h00: Pause et reflexion personnelle</p>
+                    <p>12h00 - 15h00: Travail sur projet creatif</p>
+                    <p>15h00 - 16h00: Recherche et lecture d'article pro</p>
+                    <p>18h00 - 19h00: Exercice (couse legere)</p>
+                    <p>19h00 - 20h00: Diner</p>
+                    <p>20h00 - 21h00: Cours en ligne (nouveau sujet)</p>
+                    <p>21h00 - 22h30: Loisirs (jeux de societe)</p>
+                </li>
+
+                <li class="task-item">
+                    <h3>le rapport du projet</h3>
+                    <p>categorie: Travail</p>
+                    <p>Priorite: Haute</p>
+                    <p>Date limite: 29 Nov</p>
+                </li>
+                <!-- Autres taches -->
+            </ul>
+
+            <button onclick="window.location.href='create-task.html'">Nouvelle Tache</button>
+            <form id="new-task-form">
+                <input type="text" id="task-title" placeholder="Titre" required>
+                <textarea id="task-description" placeholder="Description"></textarea>
+                <input type="date" id="task-deadline" required>
+                <select id="task-priority">
+                    <option value="low">Basse</option>
+                    <option value="medium">Moyenne</option>
+                    <option value="high">Haute</option>
+                </select>
+                <button type="submit">Ajouter</button>
+            </form>
+        </section>
+    </main>  
+    <script src="catscript.js"></script>
+</body>
+</html>                

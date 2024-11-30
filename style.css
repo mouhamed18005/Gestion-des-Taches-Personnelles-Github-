@@ -1,0 +1,256 @@
+body {  
+    background-image: url("logo_design4.jpg");
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-position: center center;
+    background-size: cover;
+    background-color: #EEE;
+    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif, verdana, times;
+    margin: 0;
+    color: white;
+}
+.navbar-brand img {
+    width: 50px;
+    border-radius: 50%;
+    box-shadow: 5px 5px 15px #00A6DF;
+    margin-bottom: -20px;
+}
+.navbar-brand a {
+    color: rgba(255, 255, 255, 0.9);
+    text-decoration: none;
+    font-size: 1.em;
+    font-weight: bold;
+}
+.navbar {
+    background-color: rgba(0, 0, 0, 0.8);
+    text-align: center;
+}
+.navbar-brand a:hover {
+    color: white;
+}
+.navbar-container {
+    text-align: center;
+    min-width: 95%;
+}
+.navbar-form {
+    display: inline-block;
+}
+.input-sm { 
+    height: 30px;
+}
+.form-control:focus {
+    box-shadow: -1px -1px 15px -1px;
+    margin-right: -10px;
+}
+.form-control::placeholder {
+    color: #00A6DF;
+    font-size: 1.2em;
+}
+.input-group-btn .glyphicon-search img {
+    width: 15px;
+}
+.navbar-nav, .navbar-header, .navbar-menu li {
+    display: inline-block;
+}
+.navbar-menu a {
+    color: black;
+    text-decoration: none;
+    padding: 15px;
+}
+.input-group-btn .btn-success {
+    background-color: #00A6DF;
+    border: 1px solid white;
+    border-radius: 0 5px 5px 0;
+    padding-top: 5px;
+    padding-bottom: 8px;
+}
+.navbar-menu a:hover {
+    background-color: #00A6DF;
+    border-radius: 5px 5px 0 0;
+    border-left: 1px solid white;
+    border-right: 1px solid white;
+    border-top: 1px solid white;
+    box-shadow: -1px -10px 20px -1px white;
+}
+.navbar-menu {
+    /*border: 1px solid white;
+    border-top: none;
+    border-left: none;
+    border-right: none;*/
+    border-bottom: 1px solid white;
+    padding-bottom: 15px;
+    
+}
+.navbar-menu.home {
+    margin-left: -40px;
+}
+/*.glyphicon-home img {
+    width: 15px;
+}
+.glyphicon-categorie img {
+    width: 15px;
+}
+.glyphicon-logo-ca img {
+    width: 15px;
+}
+.glyphicon-connexion img {
+    width: 15px;
+}*/
+[class*="glyphicon"] img {
+    width: 20px;
+    border-radius: 50%;
+}
+footer {
+    background-color: #00A6DF;
+}
+
+
+.container {
+    max-width: 90%;
+    text-align: center;
+}
+
+nav{
+    background-color: rgba(214, 224, 205, 0.014);
+    color: #050527;
+    padding: 10px;
+    text-align: center;
+}
+    
+nav ul {
+    background-color:white;
+    padding: 0;
+    border-radius: 8px;
+    text-transform: uppercase;
+}
+h2 {
+    text-align: center;
+}
+.task-item {
+    width: 80%;
+    max-width: 700px;
+    padding: 20px;
+    background-color: white;
+    margin: 20px 0;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    border-radius: 5px;
+    color: black;
+    cursor: pointer;
+}
+.task-list button {
+    display: block;
+    width: 100%;
+    margin-top: 10px;
+    padding: 10px;
+    background-color: #00A6DF;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+.task-list button:hover {
+    background-color: #45a049;
+}
+
+.task-list { 
+    padding: 20px; 
+}
+.defilant { 
+    list-style: none; 
+    padding: 0; 
+    margin: 0; 
+    overflow: hidden; /* Cache le contenu débordant */ 
+    position: relative; 
+}
+.defilant li { 
+    position: relative; 
+    width: 100%; 
+    animation: defilement 10s linear infinite; 
+    animation-delay: calc(var(--order) * 2s); /* Ajoute un délai d'animation basé sur l'ordre */
+}
+@keyframes defilement { 
+    0% 
+    { 
+        transform: translateY(100%); 
+    } 
+    100% 
+    { 
+        transform: translateY(-100%); 
+    } 
+}
+
+.principal .image {
+    width: 24%;
+    height: 350px;
+    border-radius: 1rem;
+    overflow: hidden;
+    position: relative;
+    cursor: pointer;
+    background-color: white;
+}
+.principal .image img {
+    object-fit: cover;
+    height: 100%;
+    width: 100%;
+    border-radius: 1rem;
+}
+.principal {
+    display: flex;
+    justify-content: space-between;
+    padding-top: 60px;
+    margin-left: 20px;
+    margin-right: 20px;
+}
+
+.principal .image img{
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+    transition: 0.6s;
+
+}
+.principal .image:hover img{
+    transform: scale(2) rotate(10deg);
+}
+
+
+
+.principale .image1 {
+    width: 24%;
+    height: 350px;
+    border-radius: 1rem;
+    overflow: hidden;
+    position: relative;
+    cursor: pointer;
+    background-color: white;
+}
+.principale .image1 img {
+    object-fit: cover;
+    height: 100%;
+    width: 100%;
+    border-radius: 1rem;
+}
+.principale {
+    display: flex;
+    justify-content: space-between;
+    padding-top: 60px;
+    margin-left: 20px;
+    margin-right: 20px;
+}
+
+.principale .image1 img{
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+    transition: 0.6s;
+
+}
+.principale .image1:hover img{
+    transform: scale(2) rotate(10deg);
+}
+
+
+
+
+
+

@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="fr">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Accueil - Gestion des taches personnelles</title>
+        <link rel="image" href="style/image/presentation/logo.png">
+        <link rel="stylesheet" type="text/css" href="style.css">
+    </head>
+    <body>
+        <div class="bloc-page">
+            <header class="navbar">
+                <div class="container">
+                    <div class="navbar-header">
+                        <span class="navbar-brand">
+                            <a href="index.html" title="afficher la page d'accueil">
+                                <img src="style/image/presentation/logodusite.png" alt="logodusite">
+                                GTP
+                            </a>
+                        </span>
+                        <form action="#" method="post" class="navbar-form">
+                            <div class="input-group">
+                                <input type="search" name="r" placeholder="recherche" class="input-sm form-control" autofocus required>
+                                <span class="input-group-btn">
+                                    <button type="submit" class="btn-sm btn-success" title="chercher">
+                                        <i class="glyphicon-search">
+                                            <img src="style/image/presentation/search.png" alt="chercher">
+                                        </i>
+                                    </button>
+                                </span>
+                            </div>
+                        </form> 
+                    </div>
+                    <nav class="navbar-nav">
+                        <ul class="navbar-menu">
+                            <li class="home">
+                                <a href="index.html" title="Afficher la page d'accueil">
+                                    <i class="glyphicon-logo-ca">
+                                        <img src="style/image/presentation/logo-ca.png" alt="accueil">
+                                    </i>
+                                    Accueil
+                                </a>
+                            </li>
+                            <li>
+                                <a href="categorie.html" title="Afficher la page de presentation">
+                                    <i class="glyphicon-categorie">
+                                        <img src="style/image/presentation/categorie.png" alt="categorie">
+                                    </i>
+                                    Categorie
+                                </a>
+                            </li>
+                            <li>
+                                <a href="connexion.html" title="Afficher la page de connexion"> 
+                                    <i class="glyphicon-connexion">
+                                        <img src="style/image/presentation/connexion.jpg" alt="connexion">
+                                    </i>
+                                    Connexion
+                                </a>
+                            </li>
+                
+            </header>
+        </div>
+        
+        <main>
+            <section id="task-list">
+                <h2>Mes taches</h2>
+                <ul>
+                    <!-- Taches seront affichees ici dynamiquement-->
+                </ul>
+                <button onclick="showTaskForm()">Ajouter une tache</button>
+            </section>
+            <section id="task-form" style="display: none;">
+                <h3>Nouvelle Tache</h3>
+                <form id="new-task-form">
+                    <input type="text" id="task-title" placeholder="Titre" required>
+                    <textarea id="task-description" placeholder="Description"></textarea>
+                    <input type="date" id="task-deadline" required>
+                    <select id="task-priority">
+                        <option value="low">Basse</option>
+                        <option value="medium">Moyenne</option>
+                        <option value="high"Haute></option> 
+                    </select>
+                    <button type="submit">Ajouter</button>
+                </form>
+            </section>
+        </main>
+
+        <div class="principal">
+                <div class="image">
+                    <img src="image0.jpg">
+                    <div class="description">
+                        <h3>refdfgfry</h3>
+                    </div>
+                </div>
+
+
+                <div class="image">
+                    <img src="image1.jpg">
+                </div>
+            
+
+                <div class="image">
+                    <img src="image2.jpg">
+                </div>
+            
+
+                <div class="image">
+                    <img src="image3.jpg">
+                </div>
+
+
+                <div class="principale">
+                    <div class="image1">
+                        <img src="image4.png">
+                    </div>
+
+                    <div class="image1">
+                        <img src="image5.webp">
+                    </div>
+
+                    <div class="image1">
+                        <img src="image6.webp">
+                    </div>
+
+                    <div class="image1">
+                        <img src="image7.webp">
+                    </div>
+                </div>
+            
+        </div>
+        <footer>
+            <p>&copy; 2024 Gestion de tache personnelles</p>
+        </footer>
+    </body>
+</html>

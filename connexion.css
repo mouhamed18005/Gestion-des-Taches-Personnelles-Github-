@@ -1,0 +1,79 @@
+body {
+    font-family: Arial, sans-serif; /* Définit la police par défaut */
+    background-color: #f4f4f9; /* Couleur de fond de la page */
+    display: flex; /* Utilise un conteneur flexbox pour l'alignement */
+    justify-content: center; /* Centre le contenu horizontalement */
+    align-items: center; /* Centre le contenu verticalement */
+    height: 100vh; /* Prend toute la hauteur de la fenêtre visible */
+    margin: 0; /* Supprime les marges par défaut du body */
+    background-image: url("logo_design5.jpg");
+    background-repeat: no-repeat;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-position: center center;
+    background-size: cover;
+}
+
+/* Style pour le conteneur du formulaire */
+.form-container {
+    background-color: #fff; /* Fond blanc pour contraster avec l'arrière-plan */
+    padding: 20px 30px; /* Espace interne autour du contenu */
+    border-radius: 8px; /* Bords arrondis pour un effet visuel doux */
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Ombre subtile pour créer un effet d'élévation */
+    width: 300px; /* Largeur fixe pour un design compact */
+}
+
+/* Style pour le titre du formulaire */
+h2 {
+    text-align: center; /* Centre le texte horizontalement */
+    margin-bottom: 20px; /* Espace en dessous du titre */
+    color: #333; /* Couleur sombre pour le texte */
+}
+
+/* Style pour chaque groupe de champs (label + input) */
+.input-group {
+    margin-bottom: 15px; /* Espace entre les groupes de champs */
+}
+
+/* Style pour les étiquettes des champs */
+label {
+    display: block; /* Force l'étiquette à occuper une ligne entière */
+    font-weight: bold; /* Met l'étiquette en gras pour une meilleure lisibilité */
+    margin-bottom: 5px; /* Espace entre l'étiquette et le champ */
+    color: #333; /* Couleur sombre pour le texte */
+}
+
+/* Style pour les champs de saisie */
+input {
+    width: 100%; /* Champs s'étendant sur toute la largeur disponible */
+    padding: 10px; /* Espace interne pour un confort d'utilisation */
+    border: 1px solid #ccc; /* Bordure grise légère */
+    border-radius: 5px; /* Bords arrondis pour un design cohérent */
+    font-size: 14px; /* Taille de texte standard */
+}
+
+/* Style pour le bouton de soumission */
+button {
+    width: 100%; /* Bouton prenant toute la largeur du conteneur */
+    padding: 10px; /* Espace interne pour un bouton confortable */
+    background-color: #007BFF; /* Bleu primaire pour attirer l'attention */
+    color: white; /* Texte blanc pour le contraste */
+    border: none; /* Supprime la bordure par défaut */
+    border-radius: 5px; /* Bords arrondis pour un design harmonieux */
+    font-size: 16px; /* Taille de texte plus grande pour le bouton */
+    cursor: pointer; /* Change le curseur pour indiquer qu'il est cliquable */
+    margin-top: 10px; /* Espace au-dessus du bouton */
+}
+
+/* Change la couleur du bouton lorsqu'on passe la souris dessus */
+button:hover {
+    background-color: #0056b3; /* Couleur plus foncée pour un effet visuel interactif */
+}
+
+/* Style pour le message d'erreur */
+#error-message {
+    color: red; /* Texte rouge pour indiquer un problème */
+    font-size: 14px; /* Taille de texte standard pour les messages */
+    text-align: center; /* Centre le message horizontalement */
+    margin-top: 10px; /* Espace au-dessus du message */
+}

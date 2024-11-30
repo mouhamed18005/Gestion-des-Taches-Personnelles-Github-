@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Connexion - Gestion des taches personnelles</title>
+    <link rel="stylesheet" href="connexion.css">
+</head>
+<body>
+    <div>
+        <div class="form-container">
+            <!-- Conteneur pour centrer et styliser le formulaire -->
+            <form id="loginForm">
+                <!-- Identifiant unique du formulaire pour cibler les actions en JavaScript -->
+                <h2>Connexion</h2>
+                <a href="index.html" title="cliquer ici pour aller a la page d'accueil">Aller a la page d'accueil</a><br><br>
+                <!-- Titre du formulaire -->
+                <div class="input-group">
+                    <!-- Groupe d'éléments pour l'entrée du nom d'utilisateur -->
+                    <label for="username">Nom d'utilisateur</label>
+                    <!-- `for="username"` lie ce label à l'élément `input` ayant l'ID correspondant -->
+                    <input type="text" id="username" name="username" placeholder="Entrez votre nom d'utilisateur">
+                    <!-- Champ de texte pour entrer le nom d'utilisateur avec un texte indicatif -->
+                </div>
+                <div class="input-group">
+                    <!-- Groupe d'éléments pour l'entrée du mot de passe -->
+                    <label for="password">Mot de passe</label>
+                    <input type="password" id="password" name="password" placeholder="Entrez votre mot de passe">
+                    <!-- Champ de texte masqué pour la saisie sécurisée du mot de passe -->
+                </div>
+                <button type="submit">Se connecter</button>
+                <!-- Bouton pour soumettre le formulaire -->
+                <p id="error-message"></p>
+                <!-- Paragraphe vide utilisé pour afficher les messages d'erreur via JavaScript -->
+            </form>
+        </div>
+    </div>
+    <script src="conscript.js"></script>
+        <!-- Inclusion d'un fichier JavaScript externe pour la logique du formulaire -->
+</body>
+</html>
